@@ -69,6 +69,6 @@ func (m *VU) RegisterCallback() func(f func() error) {
 
 func (m *VU) checkIntegrity() {
 	if m.InitEnvField != nil && m.StateField != nil {
-		panic("this is bug in your tests: you can't have both InitEnvField and StateField set at the same time")
+		panic("there is a bug in your tests: you can't have both InitEnvField and StateField set at the same time")
 	}
 }
